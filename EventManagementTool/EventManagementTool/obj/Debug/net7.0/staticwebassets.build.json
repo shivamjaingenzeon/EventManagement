@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ulrKe9eXo7R2Hozca2uudkiiKYdagVLqnA7Y+0g5m8g=",
+  "Source": "EventManagementTool",
+  "BasePath": "_content/EventManagementTool",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EventManagementTool\\wwwroot",
+      "Source": "EventManagementTool",
+      "ContentRoot": "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\wwwroot\\",
+      "BasePath": "_content/EventManagementTool",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
