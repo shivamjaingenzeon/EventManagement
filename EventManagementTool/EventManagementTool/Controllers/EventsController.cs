@@ -114,8 +114,9 @@ namespace EventManagementTool.Controllers
         public async Task<ActionResult<Event>> PostEvent([FromBody] Event eventI, string EmployeeId)
         {
             Console.WriteLine("in event controller" + EmployeeId);
-           /* eventI.EmployeeId = EmployeeId;*/
-
+            /* eventI.EmployeeId = EmployeeId;*/
+            eventI.EventStartDate = DateTime.UtcNow;
+            eventI.EventEndDate = DateTime.UtcNow;  
             _context.Events.Add(eventI);
             await _context.SaveChangesAsync();
 

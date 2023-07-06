@@ -10,10 +10,12 @@ namespace EventManagementTool.Controllers
     public class SignInSignUpController : ControllerBase
     {
         private readonly IAccountRepository _accountRepository;
+        private readonly IFileService _fileService;
 
         public SignInSignUpController(IAccountRepository accountRepository, IFileService fileService)
         {
             _accountRepository = accountRepository;
+            _fileService = fileService;
         }
 
 
@@ -21,7 +23,11 @@ namespace EventManagementTool.Controllers
         public async Task<IActionResult> SignUp([FromBody] EmployeeDto employee)
         {
             Console.WriteLine("In SignIn SignUP Contoller");
-         
+           /* var fileresult = _fileService.SaveImage(employee.ImageFile);
+            if (fileresult.Item1 == 1) 
+            { 
+                employee.EmployeeImage = fileresult.Item2;
+            }*/
             var result = await _accountRepository.SignUpAsync(employee);
             Console.WriteLine(result.ToString());
             if (result.Succeeded)

@@ -22,6 +22,11 @@ namespace EventManagementTool.Data
         public int CompanyId { get; set; }
         public Company Company { get; set; }
 
+        public string EmployeeImage { get; set; }
+
+        [NotMapped]
+        public FormFile ImageFile { get; set; }
+
         public ICollection<Event> Events { get; set; }
         public ICollection<Participation> Participations { get; set; }
         public ICollection<Feedback> Feedbacks { get; set; }

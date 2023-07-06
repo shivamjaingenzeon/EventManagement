@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj": {}
+    "C:\\Users\\SJain\\Documents\\EventManagement\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj": {}
   },
   "projects": {
-    "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj": {
+    "C:\\Users\\SJain\\Documents\\EventManagement\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj",
+        "projectUniqueName": "C:\\Users\\SJain\\Documents\\EventManagement\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj",
         "projectName": "EventManagementTool",
-        "projectPath": "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj",
+        "projectPath": "C:\\Users\\SJain\\Documents\\EventManagement\\EventManagementTool\\EventManagementTool\\EventManagementTool.csproj",
         "packagesPath": "C:\\Users\\SJain\\.nuget\\packages\\",
-        "outputPath": "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\obj\\",
+        "outputPath": "C:\\Users\\SJain\\Documents\\EventManagement\\EventManagementTool\\EventManagementTool\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SJain\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +53,14 @@
               "target": "Package",
               "version": "[7.0.8, )"
             },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.8, )"
@@ -80,6 +88,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

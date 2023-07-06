@@ -25,7 +25,7 @@
             }
         }
 
-        public Tuple<int, string> SaveImage(IFormFile imageFile)
+        public Tuple<int, string> SaveImage(FormFile imageFile)
         {
             try
             {

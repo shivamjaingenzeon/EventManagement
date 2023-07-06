@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using EventManagementTool.Data;
 using Microsoft.AspNetCore.Identity;
+using System.Configuration;
 
 namespace EventManagementTool.Data
 {
@@ -11,7 +12,7 @@ namespace EventManagementTool.Data
         {
             
         }
-
+        
         public DbSet<Event> Events { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Company> Companies { get; set; }

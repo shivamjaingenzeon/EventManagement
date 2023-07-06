@@ -10,11 +10,11 @@ namespace EventManagementTool.Models
         public string EmployeeName { get; set; }
         public long EmployeeContact { get; set; }
         public string EmployeeDesignation { get; set; }
-
-        [ForeignKey("RoleId")]
         public int RoleId { get; set; }
         public int CompanyId { get; set; }
+        public string EmployeeImage { get; set; }
+        public FormFile ImageFile { get; set; }
 
-       
+
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ulrKe9eXo7R2Hozca2uudkiiKYdagVLqnA7Y+0g5m8g=",
+  "Hash": "ewowJ60IMlFpt7DkLpYJRbIV3OtYA32816SeEgoSITU=",
   "Source": "EventManagementTool",
   "BasePath": "_content/EventManagementTool",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "EventManagementTool\\wwwroot",
       "Source": "EventManagementTool",
-      "ContentRoot": "C:\\Project Documents\\EventManagementTool\\EventManagementTool\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SJain\\Documents\\EventManagement\\EventManagementTool\\EventManagementTool\\wwwroot\\",
       "BasePath": "_content/EventManagementTool",
       "Pattern": "**"
     }

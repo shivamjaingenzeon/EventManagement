@@ -25,23 +25,23 @@ const Registration = () => {
       [name]: value,
     }));
   };
-  const defaultImageSrc = user.imageSrc;
+  const defaultImageSrc = user.ImageSrc;
 
   const showPreview = (e) => {
     if (e.target.files && e.target.files[0]) {
-      let imageFile = e.target.files[0];
+      let ImageFile = e.target.files[0];
       const reader = new FileReader();
       reader.onload = (x) => {
         setUser({
           ...user,
-          imageFile,
-          imageSrc: x.target.result,
+          ImageFile,
+          ImageSrc: x.target.result,
         });
       };
-      reader.readAsDataURL(imageFile);
+      reader.readAsDataURL(ImageFile);
     }
   };
-  console.log(user.companyId);
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (user.roleId === "Employee") {
@@ -59,24 +59,20 @@ const Registration = () => {
     if (user == null) {
       return;
     }
-    console.log("submit handler");
-    console.log(user.employeeEmail);
+
+    // const formatData = new FormData();
+    // formatData.append("employeeName", user.employeeName);
+    // formatData.append("employeeContact", user.employeeContact);
+    // formatData.append("employeeEmail", user.employeeEmail);
+    // formatData.append("employeeDesignation", user.employeeDesignation);
+    // formatData.append("password", user.password);
+    // formatData.append("companyId", user.companyId);
+    // formatData.append("roleId", user.roleId);
+    // formatData.append("ImageFile", user.ImageFile);
+    // formatData.append("ImageSrc", user.ImageSrc);
     console.log(user);
-    console.log(user.employeeName);
-
-    const formatData = new FormData();
-    formatData.append("employeeName", user.employeeName);
-    formatData.append("employeeContact", user.employeeContact);
-    formatData.append("employeeEmail", user.employeeEmail);
-    formatData.append("employeeDesignation", user.employeeDesignation);
-    formatData.append("password", user.password);
-    formatData.append("companyId", user.companyId);
-    formatData.append("roleId", user.roleId);
-    formatData.append("imageFile", user.imageFile);
-    formatData.append("imageSrc", user.imageSrc);
-
     userService
-      .register(formatData)
+      .register(user)
       .then((response) => {
         console.log("login success " + response.data.username);
         history("/header");

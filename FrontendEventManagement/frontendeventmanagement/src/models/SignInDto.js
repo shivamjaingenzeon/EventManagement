@@ -8,8 +8,8 @@ export default class SignInDto {
     employeeId = null,
     roleId = null,
     companyId = null,
-    imageSrc = "./images/1.jpg",
-    imageFile = null
+    ImageSrc = "./images/1.jpg",
+    ImageFile = null
   ) {
     this.employeeName = employeeName;
     this.employeeContact = employeeContact;
@@ -19,7 +19,7 @@ export default class SignInDto {
     this.employeeId = employeeId;
     this.roleId = roleId;
     this.companyId = companyId;
-    this.imageSrc = imageSrc;
-    this.imageFile = imageFile;
+    this.ImageSrc = ImageSrc;
+    this.ImageFile = ImageFile;
   }
 }
